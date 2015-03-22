@@ -1,0 +1,32 @@
+
+<div id="todo" class="issueColumn">
+<h1>Todo</h1>
+{{#each issue in issuesTodo}}
+<h2>Title: {{issue.title}}</h2>
+<p>Description: {{issue.description}}</p>
+<p>Work: {{issue.work}}</p>
+<p>User: {{issue.user}}</p>
+<p>status: {{issue.status}}</p>
+{{/each}}
+</div>
+<div id="inprogress" class="issueColumn">
+<h2>In Progress</h2>
+{{#each issue in issuesInprogress}}
+<h1>Title: {{issue.title}}</h1>
+<p>Description: {{issue.description}}</p>
+<p>Work: {{issue.work}}</p>
+<p>User: {{issue.user}}</p>
+<p>status: {{issue.status}}</p>
+{{/each}}
+</div>
+<div id="done" class="issueColumn">
+<h1>Done</h1>
+{{#each issue in issuesDone}}
+<h2>Title: {{issue.title}}</h2>
+<p>Description: {{issue.description}}</p>
+<p>Work: {{issue.work}}</p>
+<p>User: {{issue.user}}</p>
+<p>status: {{issue.status}}</p>
+{{/each}}
+</div>
+{{outlet}}
