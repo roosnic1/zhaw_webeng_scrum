@@ -1,32 +1,57 @@
 
 <div id="todo" class="issueColumn">
+{{#col-dropzone dropped="addTodo"}}
 <h1>Todo</h1>
 {{#each issue in issuesTodo}}
-<h2>Title: {{issue.title}}</h2>
-<p>Description: {{issue.description}}</p>
-<p>Work: {{issue.work}}</p>
-<p>User: {{issue.user}}</p>
-<p>status: {{issue.status}}</p>
+	{{#issue-dragable content=issue.id}}
+	<div class="issue">
+		<h2>Title: {{issue.title}}</h2>
+		<p>Description: {{issue.description}}</p>
+		<p>Work: {{issue.work}}</p>
+		<p>User: {{issue.user}}</p>
+		<p>status: {{issue.status}}</p>
+	</div>
+	{{/issue-dragable}}
 {{/each}}
+{{/col-dropzone}}
 </div>
+
+
 <div id="inprogress" class="issueColumn">
+{{#col-dropzone dropped="addInprogress"}}
 <h2>In Progress</h2>
 {{#each issue in issuesInprogress}}
-<h1>Title: {{issue.title}}</h1>
-<p>Description: {{issue.description}}</p>
-<p>Work: {{issue.work}}</p>
-<p>User: {{issue.user}}</p>
-<p>status: {{issue.status}}</p>
+	{{#issue-dragable content=issue.id}}
+	<div class="issue">
+		<h2>Title: {{issue.title}}</h2>
+		<p>Description: {{issue.description}}</p>
+		<p>Work: {{issue.work}}</p>
+		<p>User: {{issue.user}}</p>
+		<p>status: {{issue.status}}</p>
+	</div>
+	{{/issue-dragable}}
 {{/each}}
+{{/col-dropzone}}
 </div>
+
+
 <div id="done" class="issueColumn">
+{{#col-dropzone dropped="addDone"}}
 <h1>Done</h1>
 {{#each issue in issuesDone}}
-<h2>Title: {{issue.title}}</h2>
-<p>Description: {{issue.description}}</p>
-<p>Work: {{issue.work}}</p>
-<p>User: {{issue.user}}</p>
-<p>status: {{issue.status}}</p>
+	{{#issue-dragable content=issue.id}}
+	<div class="issue">
+		<h2>Title: {{issue.title}}</h2>
+		<p>Description: {{issue.description}}</p>
+		<p>Work: {{issue.work}}</p>
+		<p>User: {{issue.user}}</p>
+		<p>status: {{issue.status}}</p>
+	</div>
+	{{/issue-dragable}}
 {{/each}}
+{{/col-dropzone}}
 </div>
+
+
+
 {{outlet}}
