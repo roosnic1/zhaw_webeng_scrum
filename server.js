@@ -8,8 +8,21 @@ var api = require('./routes/api');
 
 app.set('port',(process.env.PORT || 5000));
 
+var allowCrossDomain = function(req, res, next) {
+	res.header('Access-Control-Allow-Origin','*');
+	res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE,OPTIONS');
+	res.header('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization, Content-Length, X-Requested-With');
+
+	if('OPTIONS' == req.method) {
+		res.sendStatus(200);
+	} else {
+		next();
+	}
+};
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(allowCrossDomain);
 app.use(express.static(__dirname + '/public'));
 
 app.use('/api',api);
