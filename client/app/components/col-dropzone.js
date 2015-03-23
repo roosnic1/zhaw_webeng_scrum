@@ -23,7 +23,7 @@ export default Ember.Component.extend({
 
   drop(event) {
   	var data = event.dataTransfer.getData('text/data');
-  	this.sendAction('dropped',data);
+  	this.sendAction('action',this.get('dropped'),data);
 
   	this.set('dragClass', 'deactivated');
   }
