@@ -7,7 +7,7 @@ define('client/adapters/application', ['exports', 'ember-data'], function (expor
 	'use strict';
 
 	exports['default'] = DS['default'].RESTAdapter.extend({
-		host: "http://localhost:5000",
+		host: "https://agile-taiga-9257.herokuapp.com",
 		namespace: "api"
 	});
 
@@ -1230,8 +1230,8 @@ define('client/tests/adapters/application.jshint', function () {
   'use strict';
 
   module('JSHint - adapters');
-  test('adapters/application.js should pass jshint', function() { 
-    ok(true, 'adapters/application.js should pass jshint.'); 
+  test('adapters/application.js should pass jshint', function() {
+    ok(true, 'adapters/application.js should pass jshint.');
   });
 
 });
@@ -1240,8 +1240,8 @@ define('client/tests/app.jshint', function () {
   'use strict';
 
   module('JSHint - .');
-  test('app.js should pass jshint', function() { 
-    ok(true, 'app.js should pass jshint.'); 
+  test('app.js should pass jshint', function() {
+    ok(true, 'app.js should pass jshint.');
   });
 
 });
@@ -1250,8 +1250,8 @@ define('client/tests/components/col-dropzone.jshint', function () {
   'use strict';
 
   module('JSHint - components');
-  test('components/col-dropzone.js should pass jshint', function() { 
-    ok(true, 'components/col-dropzone.js should pass jshint.'); 
+  test('components/col-dropzone.js should pass jshint', function() {
+    ok(true, 'components/col-dropzone.js should pass jshint.');
   });
 
 });
@@ -1260,8 +1260,8 @@ define('client/tests/components/issue-dragable.jshint', function () {
   'use strict';
 
   module('JSHint - components');
-  test('components/issue-dragable.js should pass jshint', function() { 
-    ok(true, 'components/issue-dragable.js should pass jshint.'); 
+  test('components/issue-dragable.js should pass jshint', function() {
+    ok(true, 'components/issue-dragable.js should pass jshint.');
   });
 
 });
@@ -1270,8 +1270,8 @@ define('client/tests/controllers/issues.jshint', function () {
   'use strict';
 
   module('JSHint - controllers');
-  test('controllers/issues.js should pass jshint', function() { 
-    ok(true, 'controllers/issues.js should pass jshint.'); 
+  test('controllers/issues.js should pass jshint', function() {
+    ok(true, 'controllers/issues.js should pass jshint.');
   });
 
 });
@@ -1294,8 +1294,8 @@ define('client/tests/helpers/resolver.jshint', function () {
   'use strict';
 
   module('JSHint - helpers');
-  test('helpers/resolver.js should pass jshint', function() { 
-    ok(true, 'helpers/resolver.js should pass jshint.'); 
+  test('helpers/resolver.js should pass jshint', function() {
+    ok(true, 'helpers/resolver.js should pass jshint.');
   });
 
 });
@@ -1327,8 +1327,8 @@ define('client/tests/helpers/start-app.jshint', function () {
   'use strict';
 
   module('JSHint - helpers');
-  test('helpers/start-app.js should pass jshint', function() { 
-    ok(true, 'helpers/start-app.js should pass jshint.'); 
+  test('helpers/start-app.js should pass jshint', function() {
+    ok(true, 'helpers/start-app.js should pass jshint.');
   });
 
 });
@@ -1337,8 +1337,8 @@ define('client/tests/models/issue.jshint', function () {
   'use strict';
 
   module('JSHint - models');
-  test('models/issue.js should pass jshint', function() { 
-    ok(true, 'models/issue.js should pass jshint.'); 
+  test('models/issue.js should pass jshint', function() {
+    ok(true, 'models/issue.js should pass jshint.');
   });
 
 });
@@ -1347,8 +1347,8 @@ define('client/tests/router.jshint', function () {
   'use strict';
 
   module('JSHint - .');
-  test('router.js should pass jshint', function() { 
-    ok(true, 'router.js should pass jshint.'); 
+  test('router.js should pass jshint', function() {
+    ok(true, 'router.js should pass jshint.');
   });
 
 });
@@ -1357,8 +1357,8 @@ define('client/tests/routes/issues.jshint', function () {
   'use strict';
 
   module('JSHint - routes');
-  test('routes/issues.js should pass jshint', function() { 
-    ok(true, 'routes/issues.js should pass jshint.'); 
+  test('routes/issues.js should pass jshint', function() {
+    ok(true, 'routes/issues.js should pass jshint.');
   });
 
 });
@@ -1367,8 +1367,8 @@ define('client/tests/serializers/application.jshint', function () {
   'use strict';
 
   module('JSHint - serializers');
-  test('serializers/application.js should pass jshint', function() { 
-    ok(true, 'serializers/application.js should pass jshint.'); 
+  test('serializers/application.js should pass jshint', function() {
+    ok(true, 'serializers/application.js should pass jshint.');
   });
 
 });
@@ -1384,8 +1384,8 @@ define('client/tests/test-helper.jshint', function () {
   'use strict';
 
   module('JSHint - .');
-  test('test-helper.js should pass jshint', function() { 
-    ok(true, 'test-helper.js should pass jshint.'); 
+  test('test-helper.js should pass jshint', function() {
+    ok(true, 'test-helper.js should pass jshint.');
   });
 
 });
@@ -1410,8 +1410,8 @@ define('client/tests/unit/adapters/application-test.jshint', function () {
   'use strict';
 
   module('JSHint - unit/adapters');
-  test('unit/adapters/application-test.js should pass jshint', function() { 
-    ok(true, 'unit/adapters/application-test.js should pass jshint.'); 
+  test('unit/adapters/application-test.js should pass jshint', function() {
+    ok(true, 'unit/adapters/application-test.js should pass jshint.');
   });
 
 });
@@ -1442,8 +1442,8 @@ define('client/tests/unit/components/col-dropzone-test.jshint', function () {
   'use strict';
 
   module('JSHint - unit/components');
-  test('unit/components/col-dropzone-test.js should pass jshint', function() { 
-    ok(true, 'unit/components/col-dropzone-test.js should pass jshint.'); 
+  test('unit/components/col-dropzone-test.js should pass jshint', function() {
+    ok(true, 'unit/components/col-dropzone-test.js should pass jshint.');
   });
 
 });
@@ -1474,8 +1474,8 @@ define('client/tests/unit/components/issue-dragable-test.jshint', function () {
   'use strict';
 
   module('JSHint - unit/components');
-  test('unit/components/issue-dragable-test.js should pass jshint', function() { 
-    ok(true, 'unit/components/issue-dragable-test.js should pass jshint.'); 
+  test('unit/components/issue-dragable-test.js should pass jshint', function() {
+    ok(true, 'unit/components/issue-dragable-test.js should pass jshint.');
   });
 
 });
@@ -1500,8 +1500,8 @@ define('client/tests/unit/controllers/issues-test.jshint', function () {
   'use strict';
 
   module('JSHint - unit/controllers');
-  test('unit/controllers/issues-test.js should pass jshint', function() { 
-    ok(true, 'unit/controllers/issues-test.js should pass jshint.'); 
+  test('unit/controllers/issues-test.js should pass jshint', function() {
+    ok(true, 'unit/controllers/issues-test.js should pass jshint.');
   });
 
 });
@@ -1526,8 +1526,8 @@ define('client/tests/unit/models/issue-test.jshint', function () {
   'use strict';
 
   module('JSHint - unit/models');
-  test('unit/models/issue-test.js should pass jshint', function() { 
-    ok(true, 'unit/models/issue-test.js should pass jshint.'); 
+  test('unit/models/issue-test.js should pass jshint', function() {
+    ok(true, 'unit/models/issue-test.js should pass jshint.');
   });
 
 });
@@ -1551,8 +1551,8 @@ define('client/tests/unit/routes/issues-test.jshint', function () {
   'use strict';
 
   module('JSHint - unit/routes');
-  test('unit/routes/issues-test.js should pass jshint', function() { 
-    ok(true, 'unit/routes/issues-test.js should pass jshint.'); 
+  test('unit/routes/issues-test.js should pass jshint', function() {
+    ok(true, 'unit/routes/issues-test.js should pass jshint.');
   });
 
 });
@@ -1577,8 +1577,8 @@ define('client/tests/unit/serializers/application-test.jshint', function () {
   'use strict';
 
   module('JSHint - unit/serializers');
-  test('unit/serializers/application-test.js should pass jshint', function() { 
-    ok(true, 'unit/serializers/application-test.js should pass jshint.'); 
+  test('unit/serializers/application-test.js should pass jshint', function() {
+    ok(true, 'unit/serializers/application-test.js should pass jshint.');
   });
 
 });
