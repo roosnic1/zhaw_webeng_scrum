@@ -1,8 +1,9 @@
 .issueColumn {
-	width: 400px;
-	float: left;
+	/*width: 400px;
+	float: left;*/
 	border: 1px solid black;
 	padding: 20px;
+
 }
 
 .issue {

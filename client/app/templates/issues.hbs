@@ -1,6 +1,7 @@
+<div class="row">
 
-<div id="todo" class="issueColumn">
-{{#col-dropzone dropped="addTodo"}}
+<div id="todo" class="issueColumn col-sm-3 col-sm-offset-1">
+{{#col-dropzone action="issueDropped" dropped="todo"}}
 <h1>Todo</h1>
 {{#each issue in issuesTodo}}
 	{{#issue-dragable content=issue.id}}
@@ -17,8 +18,8 @@
 </div>
 
 
-<div id="inprogress" class="issueColumn">
-{{#col-dropzone dropped="addInprogress"}}
+<div id="inprogress" class="issueColumn col-sm-3 col-sm-offset-1">
+{{#col-dropzone action="issueDropped" dropped="inprogress"}}
 <h2>In Progress</h2>
 {{#each issue in issuesInprogress}}
 	{{#issue-dragable content=issue.id}}
@@ -35,8 +36,8 @@
 </div>
 
 
-<div id="done" class="issueColumn">
-{{#col-dropzone dropped="addDone"}}
+<div id="done" class="issueColumn col-sm-3 col-sm-offset-1">
+{{#col-dropzone action="issueDropped" dropped="done"}}
 <h1>Done</h1>
 {{#each issue in issuesDone}}
 	{{#issue-dragable content=issue.id}}
@@ -50,6 +51,8 @@
 	{{/issue-dragable}}
 {{/each}}
 {{/col-dropzone}}
+</div>
+
 </div>
 
 
