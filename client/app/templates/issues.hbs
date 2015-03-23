@@ -1,8 +1,41 @@
 <div class="row">
 
-<div id="todo" class="issueColumn col-sm-3 col-sm-offset-1">
+</div>
+
+<div class="row">
+
+<div id="newissue" class="col-sm-3">
+	<h2>Add new Issue</h2>
+	<form>
+		<div class="form-group">
+			{{input value=newissue.title placeholder="Title" class="form-control"}}
+		</div>
+		<div class="form-group">
+			{{textarea value=newissue.description cols="30" rows="3" placeholder="Description" class="form-control"}}
+		</div>
+		<div class="form-group">
+			<label>Work</label>
+			<{{view "select" value=newissue.work content=hours}}
+		</div>
+		<div clasS="form-group">
+			{{input value=newissue.user placeholder="User" class="form-control"}}
+		</div>
+		<div class="form-group">
+			<label>Status</label>
+			<{{view "select" value=newissue.status content=status}}
+		</div>
+		<button type="submit" {{action 'addIssue'}} class="btn btn-success">Add</button>
+	</form>
+
+
+
+
+</div>
+
+
+<div id="todo" class="issueColumn col-sm-3 ">
+<h1 class="text-center">Todo</h1>
 {{#col-dropzone action="issueDropped" dropped="todo"}}
-<h1>Todo</h1>
 {{#each issue in issuesTodo}}
 <div class="row">
 	{{#issue-dragable actionSave="save" actionDelete="delete" actionCancel="cancel" content=issue}}
@@ -14,9 +47,9 @@
 </div>
 
 
-<div id="inprogress" class="issueColumn col-sm-3 col-sm-offset-1">
+<div id="inprogress" class="issueColumn col-sm-3">
+<h1 class="text-center">In Progress</h1>
 {{#col-dropzone action="issueDropped" dropped="inprogress"}}
-<h2>In Progress</h2>
 {{#each issue in issuesInprogress}}
 <div class="row">
 	{{#issue-dragable actionSave="save" actionDelete="delete" actionCancel="cancel" content=issue}}
@@ -28,9 +61,9 @@
 </div>
 
 
-<div id="done" class="issueColumn col-sm-3 col-sm-offset-1">
+<div id="done" class="issueColumn col-sm-3">
+<h1 class="text-center">Done</h1>
 {{#col-dropzone action="issueDropped" dropped="done"}}
-<h1>Done</h1>
 {{#each issue in issuesDone}}
 <div class="row">
 	{{#issue-dragable actionSave="save" actionDelete="delete" actionCancel="cancel" content=issue}}
