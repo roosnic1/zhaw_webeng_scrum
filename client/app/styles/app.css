@@ -1,15 +1,5 @@
-.issueColumn {
-	/*width: 400px;
-	float: left;*/
-	border: 1px solid black;
-	/*padding: 20px;*/
-	padding-bottom: 30px;
-
-}
 
 .issue {
-	/*margin-top: 30px;*/
-	/*width: 100%;*/
 	border: 1px solid blue;
 	background-color: cyan;
 	padding: 5px;
@@ -17,6 +7,16 @@
 
 .issueDraggable[draggable=true] {
 	display: inline-block;
-
 	cursor: move;
+}
+
+.colDropzone {
+	display: block;
+	border: 3px dashed grey;
+	padding-bottom: 30px;
+	background-color: #aaa;
+}
+
+.colDropzone.activated {
+	background-color: #2ecc71;
 }
