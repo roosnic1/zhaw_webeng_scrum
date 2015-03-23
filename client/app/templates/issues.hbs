@@ -4,15 +4,11 @@
 {{#col-dropzone action="issueDropped" dropped="todo"}}
 <h1>Todo</h1>
 {{#each issue in issuesTodo}}
-	{{#issue-dragable content=issue.id}}
-	<div class="issue">
-		<h2>Title: {{issue.title}}</h2>
-		<p>Description: {{issue.description}}</p>
-		<p>Work: {{issue.work}}</p>
-		<p>User: {{issue.user}}</p>
-		<p>status: {{issue.status}}</p>
-	</div>
+<div class="row">
+	{{#issue-dragable actionSave="save" actionDelete="delete" actionCancel="cancel" content=issue}}
 	{{/issue-dragable}}
+</div>
+<br>
 {{/each}}
 {{/col-dropzone}}
 </div>
@@ -22,15 +18,11 @@
 {{#col-dropzone action="issueDropped" dropped="inprogress"}}
 <h2>In Progress</h2>
 {{#each issue in issuesInprogress}}
-	{{#issue-dragable content=issue.id}}
-	<div class="issue">
-		<h2>Title: {{issue.title}}</h2>
-		<p>Description: {{issue.description}}</p>
-		<p>Work: {{issue.work}}</p>
-		<p>User: {{issue.user}}</p>
-		<p>status: {{issue.status}}</p>
-	</div>
+<div class="row">
+	{{#issue-dragable actionSave="save" actionDelete="delete" actionCancel="cancel" content=issue}}
 	{{/issue-dragable}}
+</div>
+<br>
 {{/each}}
 {{/col-dropzone}}
 </div>
@@ -40,21 +32,16 @@
 {{#col-dropzone action="issueDropped" dropped="done"}}
 <h1>Done</h1>
 {{#each issue in issuesDone}}
-	{{#issue-dragable content=issue.id}}
-	<div class="issue">
-		<h2>Title: {{issue.title}}</h2>
-		<p>Description: {{issue.description}}</p>
-		<p>Work: {{issue.work}}</p>
-		<p>User: {{issue.user}}</p>
-		<p>status: {{issue.status}}</p>
-	</div>
+<div class="row">
+	{{#issue-dragable actionSave="save" actionDelete="delete" actionCancel="cancel" content=issue}}
 	{{/issue-dragable}}
+</div>
+<br>
 {{/each}}
 {{/col-dropzone}}
 </div>
 
 </div>
-
 
 
 {{outlet}}

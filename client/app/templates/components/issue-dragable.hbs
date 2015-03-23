@@ -1,1 +1,7 @@
-{{yield}}
+<div class="issue">
+	<b>Title: {{content.title}}</b>
+	<p>Description: {{content.description}}</p>
+	<p>Work: {{content.work}}</p>
+	<p>User: {{content.user}}</p>
+	<button type="button" {{action "edit"}} class="btn btn-info">Edit</button>
+</div>

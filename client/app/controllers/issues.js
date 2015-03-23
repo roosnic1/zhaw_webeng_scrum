@@ -29,6 +29,36 @@ export default Ember.Controller.extend({
 				debug.error("No issue with ID: " + issueId);
 			}
 
+		},
+		save: function(issueId) {
+			console.log('save');
+			var issueSearch = this.get('model').filterBy('id',issueId);
+			if(issueSearch.length > 0) {
+				var issue = issueSearch[0];
+				issue.save();
+			} else {
+				debug.error("No issue with ID: " + issueId);
+			}
+		},
+		cancel: function(issueId) {
+			console.log('cancel');
+			var issueSearch = this.get('model').filterBy('id',issueId);
+			if(issueSearch.length > 0) {
+				var issue = issueSearch[0];
+				issue.rollback();
+			} else {
+				debug.error("No issue with ID: " + issueId);
+			}
+		},
+		delete: function(issueId) {
+			console.log('delete');
+			var issueSearch = this.get('model').filterBy('id',issueId);
+			if(issueSearch.length > 0) {
+				var issue = issueSearch[0];
+				issue.destroyRecord();
+			} else {
+				debug.error("No issue with ID: " + issueId);
+			}
 		}
 	}
 

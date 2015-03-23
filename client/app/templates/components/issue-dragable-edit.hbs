@@ -1,0 +1,9 @@
+<div class="issue">
+	<b>Title: {{input value=content.title}}</b>
+	<p>Description: {{input value=content.description}}</p>
+	<p>Work: {{view "select" content=hours value=content.work}}</p>
+	<p>User: {{input value=content.user}}</p>
+	<button type="button" {{action "save"}} class="btn btn-xs btn-success">Save</button>
+	<button type="button" {{action "cancel"}} class="btn btn-xs btn-warning">Cancel</button>
+	<button type="button" {{action "delete"}} class="btn btn-xs btn-danger">Delete</button>
+</div>

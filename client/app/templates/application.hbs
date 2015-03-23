@@ -1,7 +1,20 @@
-<div class="container">
-	<h2 id="title">Welcome to Ember.js</h2>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        Scrum Board
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li>{{#link-to 'issues'}}Issues{{/link-to}}</li>
+		</ul>
+	</div>
+  </div>
+</nav>
 
-	{{#link-to 'issues'}}Go to Issues{{/link-to}}
+
+<div class="container">
 
 	{{outlet}}
 </div>
