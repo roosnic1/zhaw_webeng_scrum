@@ -2,7 +2,14 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/ScrumServer');
+
+console.log(process.env.MONGOLAB_URI);
+if(process.env.MONGOLAB_URI === undefined) {
+	mongoose.connect('mongodb://localhost/ScrumServer');
+} else {
+	mongoose.connect(process.env.MONGOLAB_URI);
+}
+
 var app = express();
 var api = require('./routes/api');
 
