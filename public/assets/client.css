@@ -1,4 +1,22 @@
-.issueColumn {
-	width: 400px;
-	float: left;
+
+.issue {
+	border: 1px solid blue;
+	background-color: cyan;
+	padding: 5px;
+}
+
+.issueDraggable[draggable=true] {
+	display: inline-block;
+	cursor: move;
+}
+
+.colDropzone {
+	display: block;
+	border: 3px dashed grey;
+	padding-bottom: 30px;
+	background-color: #aaa;
+}
+
+.colDropzone.activated {
+	background-color: #2ecc71;
 }

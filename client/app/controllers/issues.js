@@ -37,7 +37,7 @@ export default Ember.Controller.extend({
 				issue.set('status',dropZone);
 				issue.save();
 			} else {
-				debug.error("No issue with ID: " + issueId);
+				console.error("No issue with ID: " + issueId);
 			}
 
 		},
@@ -48,7 +48,7 @@ export default Ember.Controller.extend({
 				var issue = issueSearch[0];
 				issue.save();
 			} else {
-				debug.error("No issue with ID: " + issueId);
+				console.error("No issue with ID: " + issueId);
 			}
 		},
 		cancel: function(issueId) {
@@ -58,7 +58,7 @@ export default Ember.Controller.extend({
 				var issue = issueSearch[0];
 				issue.rollback();
 			} else {
-				debug.error("No issue with ID: " + issueId);
+				console.error("No issue with ID: " + issueId);
 			}
 		},
 		delete: function(issueId) {
@@ -68,7 +68,7 @@ export default Ember.Controller.extend({
 				var issue = issueSearch[0];
 				issue.destroyRecord();
 			} else {
-				debug.error("No issue with ID: " + issueId);
+				console.error("No issue with ID: " + issueId);
 			}
 		},
 		addIssue: function() {
@@ -88,7 +88,7 @@ export default Ember.Controller.extend({
 					work:1,
 					user:'',
 					status:'todo'
-				})
+				});
 			} else {
 				console.log('No Title or User');
 			}
