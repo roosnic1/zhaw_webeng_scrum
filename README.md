@@ -14,7 +14,7 @@ Der Client Teil besteht aus Ember.js mit einem REST Adapter welcher auf den Serv
 Ember.js ist ein sehr umfangreiches MVC Framework welches die neusten Standards der Webentwicklung umsetzt und für dieses Projekt hervorragend geeignet ist.
 
 ## Development ##
-Für die Entwicklung wird der [Heroku Toolbelt][https://toolbelt.heroku.com/] und das [Ember CLI][http://www.ember-cli.com/] benötigt. Zusätzlich wird eine lokale laufende Instanz einer mongodb erwartet.
+Für die Entwicklung wird der [Heroku Toolbelt](https://toolbelt.heroku.com/) und das [Ember CLI](http://www.ember-cli.com/) benötigt. Zusätzlich wird eine lokale laufende Instanz einer mongodb erwartet.
 
 Im Root Verzeichnis kann man mit ```npm install``` die zusätzlichen Nodemodule installieren und mit ```foreman start``` wird der Server Teil wie auf Heroku ausgeführt.
 
